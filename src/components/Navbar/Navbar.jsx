@@ -2,6 +2,7 @@ import { Box, Flex, Image, Separator, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { DrawerBackdrop, DrawerBody, DrawerCloseTrigger, DrawerContent, DrawerFooter, DrawerHeader, DrawerRoot, DrawerTitle, DrawerTrigger } from "../../components/ui/drawer";
+import { logo } from "../../assets";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,9 +10,7 @@ export default function Navbar() {
     <Box bg="#1A0B2E" px={{ md: "120px", base: "10px" }}>
       {/* Desktop Navigation */}
       <Box display={{ md: "flex", base: "none" }} color="white" h="80px" alignItems="center" justifyContent="space-between">
-        <Text fontWeight="bold" fontSize="xl">
-          Logo
-        </Text>
+        <Image src={logo} w={"50px"}  rounded={"50%"}/>
         <Flex alignItems="center" gap="50px">
           {["Home", "About", "Lab"].map((item) => (
             <Text key={item} transition='all .2s ease-in-out' fontWeight="900" fontSize="2xl" cursor="pointer" _hover={{ color: "#D53F8C" }}>

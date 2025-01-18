@@ -128,8 +128,21 @@ body {
   background: linear-gradient(135deg, #1a0b2e, #3b0963);
 }
 
+.br{
+  border: 2px solid transparent !important;
+  border-radius: 30px !important;
+  border-image: linear-gradient(to right, #4C257B, #9B66B6) 1 !important; 
+}
 
 
+.text {
+  font-size: 60px; /* Adjust the font size */
+  background: linear-gradient(to right, #4C257B, #9B66B6); /* Purple to lighter purple/pink */
+  -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari, etc.) */
+  background-clip: text; /* For other browsers */
+  color: transparent; /* Make text color transparent to show the gradient */
+  line-height: 1; /* Adjust line height for better vertical alignment */
+}
 
 
 

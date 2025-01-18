@@ -5,6 +5,7 @@ import Work from "../components/Work";
 import Footer from "../components/Footer";
 import { Hero } from "../components/Hero/Hero";
 import Project from "../components/Project/Project";
+import Service from "../components/Service/Service";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       </Box>
       <Hero />
       <Project />
+      <Service/>
       {/* <Work /> */}
       <Footer />
     </Box>

@@ -6,8 +6,8 @@ import { ReactTyped } from "react-typed";
 
 export const Hero = () => {
   return (
-    <Box w="100%" h="100%" py={"30px"}>
-      <Box className="hero" display={"flex"} alignItems={"center"} gap={3} justifyContent={{ base: "space-between", lg: "flex-start" }} w={{ lg: "70%", base: "90%" }} mx={"auto"} pt={"100px"}>
+    <Box w="100%" h="100%" pb={"30px"}>
+      <Box className="hero" display={"flex"} alignItems={"center"} gap={3} justifyContent={{ base: "space-between", lg: "flex-start" }} w={{ lg: "70%", base: "90%" }} mx={"auto"} pt={"60px"}>
         <Box w={{ base: "400px", sm: "385px" }} h={{ base: "400px", sm: "430px" }} className="wrapper">
           <Image w={{ base: "200px", sm: "260px" }} h={{ base: "200px", sm: "260px" }} className="foreground" src={me} />
         </Box>
@@ -20,9 +20,9 @@ export const Hero = () => {
           <Box w={"100%"} pt={{ base: "20px", lg: "100px" }}>
             <Text color={"#fff"}>A Designer who</Text>
             <Text color={"#fff"} fontSize={{ base: "30px", lg: "50px", sm: "40px" }} w={{ sm: "385px", base: "90%" }}>
-              Judges a book by its cover...
+              Judges a book by its <Span color={"#7127BA"}>cover</Span>...
             </Text>
-            <Text color={"#fff"} pt={"10px"} fontSize={"12px"}>
+            <Text color={"#fff"} pt={"0px"} fontSize={"12px"}>
               Because if the cover does not impress you what else can?
             </Text>
           </Box>
