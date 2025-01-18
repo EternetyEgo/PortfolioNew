@@ -55,3 +55,94 @@
     -webkit-backdrop-filter: blur(10px); /* Add vendor prefix for WebKit-based browsers */
   }
   
+@import url(https://fonts.googleapis.com/css2?family=Preahvihear&display=swap);
+* {
+  font-family: "Preahvihear", display;
+}
+
+.gradient {
+  background: url(./assets/Gradient.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rgbbackground::before {
+  --size: 45px;
+  --line: color-mix(in hsl, canvasText, transparent 70%);
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(90deg, var(--line) 1px, transparent 1px var(--size)) 50% 50% / var(--size) var(--size), linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% / var(--size) var(--size);
+  mask: linear-gradient(-20deg, transparent 50%, white);
+  top: 0;
+  transform-style: flat;
+  pointer-events: none;
+  z-index: -1;
+}
+@media (max-width: 800px) {
+  .absolute {
+    display: none;
+  }
+
+  .rgbbackground {
+    background: linear-gradient(#000000, #0b265a);
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0rgba (0, 0, 0, 0.37);
+}
+
+.absolute {
+  position: absolute;
+  z-index: 1;
+}
+.bg-shape1 {
+  width: 600px;
+  height: 600px;
+  border-radius: 9999px;
+  position: relative;
+  animation: one 10s infinite;
+}
+
+@keyframes one {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -200px;
+    top: 100px;
+  }
+  50% {
+    left: 50px;
+    top: 170px;
+  }
+  75% {
+    left: 50px;
+    top: 100px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+.bg-blur {
+  filter: blur(90px);
+}
+.bg-teal {
+  background: linear-gradient(135deg, #1a0b2e, #3b0963);
+}
