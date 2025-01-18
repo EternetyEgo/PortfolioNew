@@ -4,23 +4,25 @@ import { FaGithub, FaInstagram, FaTelegram } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <Box px={{ md: "120px", base: "20px" }} py="50px" className="rgbbackground">
-      <Heading fontSize={{ base: "2xl", md: "3xl" }} mb={20}>
-        Contact
-      </Heading>
+    <Box w={"100%"} h={"100%"} pt={"50px"} pos="relative">
+      <Flex flexDir="column" w={{ base: "90%", lg: "70%" }} mx={"auto"} zIndex="99" className="rgbbackground">
+        <Heading fontSize="4xl" mb={28}>
+          Contact
+        </Heading>
 
-      <Text fontSize={{ base: "sm", md: "md" }} mb={6}>
-        I'm currently looking to join a cross-functional team that values improving people's lives through accessible design. Or have a project in mind? Let's connect.
-      </Text>
+        <Text fontSize="lg" mb={6}>
+          I'm currently looking to join a cross-functional team that values improving people's lives through accessible design. Or have a project in mind? Let's connect.
+        </Text>
 
-      <Text fontSize={{ base: "sm", md: "md" }} mb={4}>
-        ibrhaimmemon930@gmail.com
-      </Text>
+        <Text fontSize="md" mb={4}>
+          ibrhaimmemon930@gmail.com
+        </Text>
 
-      <Flex gap="25px" mb={6}>
-        <FaInstagram  cursor={"pointer"} size={35} />
-        <FaTelegram cursor={"pointer"} size={35} />
-        <FaGithub cursor={"pointer"} size={35} />
+        <Flex gap="25px" mb={6}>
+          <FaInstagram size={35} />
+          <FaTelegram size={35} />
+          <FaGithub size={35} />
+        </Flex>
       </Flex>
     </Box>
   );
