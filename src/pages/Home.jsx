@@ -8,7 +8,7 @@ import Project from "../components/Project/Project";
 
 export default function Home() {
   return (
-    <Box bg="#000000">
+    <Box bg="#11071F"> 
       <Navbar />
       <Box className="absolute">
         <div className="absolute inset-0 justify-center">
@@ -17,7 +17,7 @@ export default function Home() {
       </Box>
       <Hero />
       <Project />
-      <Work />
+      {/* <Work /> */}
       <Footer />
     </Box>
   );
