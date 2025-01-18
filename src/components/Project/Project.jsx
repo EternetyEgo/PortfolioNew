@@ -4,7 +4,7 @@ import { cr, pr } from "../../assets";
 
 const Project = () => {
   return (
-    <Box w={"100%"} h={"100vh"} bg={"#11071F"} pt={"50px"}>
+    <Box w={"100%"} h={"100vh"} bg={"#11071F"} pt={{base:"50px", lg: "100px"}}>
       <Box w={{ base: "90%", lg: "70%" }} mx={"auto"}>
         <Box display={"flex"} justifyContent={"space-between"} flexDir={{base: "column", xl: "row"}} alignItems={'center'}>
         <Box display={"flex"} flexDir={"column"} gap={2}>

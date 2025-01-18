@@ -8,7 +8,7 @@ export default function Work() {
     AOS.init({ duration: 1200, once: true });
   }, []);
   return (
-    <Box mt='100px'>
+    <Box mt='100px' >
       <Flex class data-aos="fade-up" flexWrap="wrap" alignItems="center" justifyContent="center" gap="30px" className="gradient" h="auto" px={{ md: "60px", base: "20px" }}>
         <Box width={{ md: "450px", base: "100%" }} bg="linear-gradient(135deg, #1A0B2E, #3B0963)" borderRadius="20px" color="white" boxShadow="lg" textAlign="start" overflow="hidden" position="relative">
           <Image width="100%" height="250px" objectFit="cover" src="https://marketplace.canva.com/EAFb6ulQkLM/2/0/1600w/canva-brand-agency-portfolio-website-in-white-black-sleek-monochrome-style-VPXYcBtq8h8.jpg" alt="Portfolio" />

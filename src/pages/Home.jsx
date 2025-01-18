@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Work from "../components/Work";
 import Footer from "../components/Footer";
 import { Hero } from "../components/Hero/Hero";
+import Project from "../components/Project/Project";
 
 export default function Home() {
   return (
