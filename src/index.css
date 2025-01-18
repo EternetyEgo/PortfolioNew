@@ -13,11 +13,7 @@
     background-size: cover; 
     border-radius: 50%; 
 }
-.wrapper2 {
-    border-radius: 50%; 
-    height: 400px;
-    background: radial-gradient(#e66465, #9198e5) !important;
-}
+
 
 .foreground {
     position: absolute;
