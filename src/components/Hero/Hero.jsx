@@ -6,8 +6,8 @@ import { ReactTyped } from "react-typed";
 
 export const Hero = () => {
   return (
-    <Box w="100%" h="100%" py={"30px"} bg={"#11071F"}>
-      <Box className="hero" display={"flex"} alignItems={"center"} gap={3} justifyContent={{ base: "space-between", lg: "flex-start" }} w={{ lg: "70%", base: "90%" }} mx={"auto"} pt={"100px"}>
+    <Box w="100%" h="100%" pb={"30px"} bg={"#11071F"}>
+      <Box className="hero" display={"flex"} alignItems={"center"} gap={3} justifyContent={{ base: "space-between", lg: "flex-start" }} w={{ lg: "70%", base: "90%" }} mx={"auto"} pt={"70px"}>
         <Box w={{ base: "400px", sm: "385px" }} h={{ base: "400px", sm: "430px" }} className="wrapper">
           <Image w={{ base: "200px", sm: "260px" }} h={{ base: "200px", sm: "260px" }} className="foreground" src={me} />
         </Box>
