@@ -48,3 +48,9 @@
         height: 270px !important;
     }
 }
+
+.blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Add vendor prefix for WebKit-based browsers */
+  }
+  
