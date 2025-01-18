@@ -2,6 +2,7 @@ import { Box, Image, Span, Text } from "@chakra-ui/react";
 import React from "react";
 import { me } from "../../assets";
 import { FaFacebook } from "react-icons/fa";
+import { ReactTyped } from "react-typed";
 
 export const Hero = () => {
   return (
@@ -52,7 +53,7 @@ export const Hero = () => {
 
       <Box gap={{base:2, md: 0}} display={"flex"} alignItems={{base: "center", md: "flex-start"}} flexDirection={"column"} pt={{base: "30px", lg: "60px"}} pl={{lg: "50px", base: 0}} mx="auto" color={'#fff'} w={{ lg: "70%", base: "90%" }}>
       
-      <Text fontSize={{ base: "30px", lg: "50px", sm: "30px" }}>I'm a Software Engineer.| </Text>
+      <Text fontSize={{ base: "30px", lg: "50px", sm: "30px" }}>I'm a <ReactTyped strings={["Software Engineer.", "Mobile Developer."]} backSpeed={60} loop typeSpeed={80}/> </Text>
         <Text display={"flex"} alignItems={"center"}>Currently, I'm a Software Engineer at <FaFacebook style={{marginLeft: "5px", marginRight: "5px"}} cursor={"pointer"} color="blue" /> <Span cursor={"pointer"} color={"blue"}>Facebook</Span>.</Text>
 
         <Text textAlign={{base: "center", md: "left"}} w={{lg: "620px", base: "90%"}} pt={{base: "10px", lg: "60px"}}>

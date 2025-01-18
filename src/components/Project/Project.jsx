@@ -39,7 +39,9 @@ const Project = () => {
           </Box>
         </Box>
         <Box>
+            <Box className="wrapper2">
             <Image objectFit={"cover"} src={pr} />
+            </Box>
         </Box>
         </Box>
 
