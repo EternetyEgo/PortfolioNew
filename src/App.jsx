@@ -7,7 +7,7 @@ import PageProgressBar from "page-progressbar-react";
 function App() {
   return (
     <Box>
-      <ScrollToTop style={{paddingLeft: "5px"}} smooth />
+      <ScrollToTop style={{paddingLeft: "6px"}} smooth />
       <Box pos={"relative"} zIndex={999}><PageProgressBar /></Box>
       <Routes>
         <Route path="/" element={<Home />}></Route>

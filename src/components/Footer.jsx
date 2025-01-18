@@ -18,9 +18,9 @@ export default function Footer() {
       </Text>
 
       <Flex gap="25px" mb={6}>
-        <FaInstagram size={35} />
-        <FaTelegram size={35} />
-        <FaGithub size={35} />
+        <FaInstagram  cursor={"pointer"} size={35} />
+        <FaTelegram cursor={"pointer"} size={35} />
+        <FaGithub cursor={"pointer"} size={35} />
       </Flex>
     </Box>
   );
