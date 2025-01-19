@@ -23,9 +23,7 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       <Box display={{ md: "none", base: "block" }}>
         <Flex alignItems="center" justifyContent="space-between" h="80px">
-          <Text fontWeight="bold" fontSize="xl">
-            Logo
-          </Text>
+         <Image src={logo} w={"50px"} />
           <FaBarsStaggered size={30} onClick={() => setOpen(true)} cursor="pointer" />
         </Flex>
         <DrawerRoot open={open} onOpenChange={(e) => setOpen(e.open)}>
@@ -33,7 +31,7 @@ export default function Navbar() {
           <DrawerContent>
             <DrawerHeader>
               <DrawerTitle fontSize="xl" fontWeight="bold">
-                Logo
+                <Image src={logo} w={"50px"} />
               </DrawerTitle>
             </DrawerHeader>
             <DrawerBody>

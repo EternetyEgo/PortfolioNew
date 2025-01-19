@@ -8,7 +8,7 @@ const Project = () => {
     AOS.init({ duration: 1200, once: true });
   }, []);
   return (
-    <Box w={"100%"} h={"100%"} bg={"#11071F"} py={"50px"}>
+    <Box id="project" w={"100%"} h={"100%"} bg={"#11071F"} py={"50px"}>
       <Flex flexDir="column" gap="60px" w={{ base: "90%", lg: "70%" }} mx={"auto"}>
         <Separator variant="dashed" colorScheme="gray" borderColor="gray.500" borderWidth="2px" />
         <Box data-aos="fade-up" display={"flex"} justifyContent={"space-between"} flexDir={{ base: "column", xl: "row" }} alignItems={"center"}>
