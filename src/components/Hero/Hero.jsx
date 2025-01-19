@@ -33,7 +33,7 @@ export const Hero = () => {
         <Text fontSize={{ base: "30px", lg: "50px", sm: "30px" }}>
           I'm a <ReactTyped strings={["Software Engineer.", "Mobile Developer."]} backSpeed={60} loop typeSpeed={80} />{" "}
         </Text>
-        <Text display={"flex"} alignItems={"center"}>
+        <Text display={"flex"} alignItems={{lg:"center", base: 'flex-start'}}>
           Currently, I'm a Software Engineer at <FaFacebook style={{ marginLeft: "5px", marginRight: "5px" }} cursor={"pointer"} color="blue" />{" "}
           <Span cursor={"pointer"} color={"blue"}>
             Facebook
