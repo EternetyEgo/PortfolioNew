@@ -34,7 +34,7 @@ export const Hero = () => {
           I'm a <ReactTyped strings={["Software Engineer.", "Mobile Developer."]} backSpeed={60} loop typeSpeed={80} />{" "}
         </Text>
         <Text display={"flex"} alignItems={{lg:"center", base: 'flex-start'}}>
-          Currently, I'm a Software Engineer at <FaFacebook style={{ marginLeft: "5px", marginRight: "5px" }} cursor={"pointer"} color="blue" />{" "}
+          Currently, I'm a Software Engineer at {" "}<FaFacebook cursor={"pointer"} color="blue" />{" "}
           <Span cursor={"pointer"} color={"blue"}>
             Facebook
           </Span>
