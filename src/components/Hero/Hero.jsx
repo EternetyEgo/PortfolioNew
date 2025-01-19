@@ -33,13 +33,14 @@ export const Hero = () => {
         <Text fontSize={{ base: "30px", lg: "50px", sm: "30px" }}>
           I'm a <ReactTyped strings={["Software Engineer.", "Mobile Developer."]} backSpeed={60} loop typeSpeed={80} />{" "}
         </Text>
-        <Text display={"flex"} alignItems={{lg:"center", base: 'flex-start'}}>
-          Currently, I'm a Software Engineer at {" "}<FaFacebook cursor={"pointer"} color="blue" />{" "}
-          <Span cursor={"pointer"} color={"blue"}>
+        <Box display={"flex"} w={"100%"} alignItems={{lg:"center", base: 'flex-start'}}>
+          Currently, I'm a Software Engineer at
+          <Span display={"flex"} cursor={"pointer"} color={"blue"}>
+          <FaFacebook cursor={"pointer"} color="blue" />
             Facebook
           </Span>
           .
-        </Text>
+        </Box>
 
         <Text textAlign={{ base: "center", md: "left" }} w={{ lg: "620px", base: "90%" }} pt={{ base: "10px", lg: "60px" }}>
           A self-taught UI/UX designer, functioning in the industry for 3+ years now. I make meaningful and delightful digital products that create an equilibrium between user needs and business goals.
